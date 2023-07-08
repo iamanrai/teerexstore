@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeeRex Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/index.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">TeeRex Store</div>
+      <div class="right">
+        <div class="product">Product</div>
+        <div class="cart">
+          <a href="../html/cart.html"><img src="../image/cart.png" alt="cart_logo" width="60px" height="60px" /></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="upper">
+      <input type="text" placeholder="Search for products..." />
+      <button type="submit">
+        <img src="../image/search.png" width="40px" height="40px" />
+      </button>
+    </div>
+    <div class="lower">
+      <div class="sidebar">
+        <div class="color">
+          <h3>Color</h3>
+          <input type="checkbox" id="red" value="red" /><label for="red">Red</label><br />
+          <input type="checkbox" id="blue" value="blue" /><label for="blue">Blue</label><br />
+          <input type="checkbox" id="green" value="green" /><label for="green">Green</label>
+        </div>
+        <div class="gender">
+          <h3>Gender</h3>
+          <input type="checkbox" id="male" value="male" /><label for="male">Male</label><br />
+          <input type="checkbox" id="female" value="female" /><label for="female">Female</label>
+        </div>
+        <div class="price">
+          <h3>Price</h3>
+          <input type="checkbox" id="price_1" value="price_1" /><label for="price_1">0-Rs250</label><br />
+          <input type="checkbox" id="price_2" value="price_2" /><label for="price_2">Rs251-450</label><br />
+          <input type="checkbox" id="price_3" value="price_3" /><label for="price_3">Rs 450</label>
+        </div>
+        <div id="type">
+          <h3>Type</h3>
+          <input type="checkbox" id="polo" value="polo" /><label for="polo">Polo</label><br />
+          <input type="checkbox" id="hoodie" value="hoodie" /><label for="hoodie">Hoodie</label><br />
+          <input type="checkbox" id="basic" value="basic" /><label for="basic">Basic</label>
+        </div>
+      </div>
+      <div class="mainpage">
+        <div class="column_1">
+          <div class="img_1"><img src="../image/mens-black-polo-t-shirts.jpg">
+            <div class="add_to_cart">Rs.300
+              <button type="submit">Add to Cart</button>
+            </div>
+          </div>
+          <div class="img_1"><img src="../image/Green round neck tshirt.jpeg">
+            <div class="add_to_cart">Rs.300
+              <button type="submit">Add to Cart</button>
+            </div>
+          </div>
+          <div class="img_1"><img src="../image/Black Hoodie.jpeg">
+            <div class="add_to_cart">Rs.300
+              <button type="submit">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="column_2">
+          <div class="img_1"><img src="../image/pink hoodie.jpg">
+            <div class="add_to_cart">Rs.300
+              <button type="submit">Add to Cart</button>
+            </div>
+          </div>
+          <div class="img_1"><img src="../image/pure_cotton_blue_polo_t_shirt_2_.jpg">
+            <div class="add_to_cart">Rs.300
+              <button type="submit">Add to Cart</button>
+            </div>
+          </div>
+          <div class="img_1"><img src="../image/Pink round tshirt.jpg">
+            <div class="add_to_cart">Rs.300
+              <button type="submit">Add to Cart</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/js/index.js"></script>
+</body>
+
+</html>
+<!-- font-family: 'Poppins', sans-serif; -->
