@@ -6,7 +6,6 @@ body {
   background-color: white;
   color: black;
   font-family: "Poppins", sans-serif;
-  position: relative;
 }
 .clear_fix {
   margin: 0;
@@ -80,11 +79,10 @@ section button img {
 section .lower {
   width: 100%;
   display: flex;
-  margin-top: 50px;
   width: 100%;
   justify-content: space-evenly;
-  position: absolute;
-  top: 50px;
+  position: relative;
+  top: 100px;
 }
 .sidebar {
   width: 200px;
