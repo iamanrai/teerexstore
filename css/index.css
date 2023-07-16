@@ -116,7 +116,7 @@ h3{
   justify-content: space-around;
   column-gap: 10px;
 }
-.mainpage .column_1{
+/* .mainpage .column_1{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -124,32 +124,49 @@ h3{
   flex-wrap: wrap;
   row-gap: 20px;
   margin-bottom: 20px;
-}
-.mainpage .column_1 .img_1{
+} */
+.img_1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  width: 220px;
-  height: 250px;
+  justify-content: space-around;
+  width: 270px;
+  height: 300px;
   background-color: rgb(224, 223, 223);
+  margin-bottom: 15px;
 }
-.mainpage .column_1 .img_1 button{
+/* .mainpage .column_1 .img_1 button{
   background-color: rgb(93, 93, 252);
   padding: 5px;
   width: 100px;
   height: 30px;
   margin-bottom: 5px;
-}
-.mainpage .column_1 .img_1 img{
+} */
+.img_1 img{
+  /* border: 2px solid black; */
   margin-top: 10px;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 230px;
 }
 .add_to_cart{
-  margin-left: 13px;
+  margin-left: 125px;
+  background-color: rgb(93, 93, 252);
+  padding: 5px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
 }
-.mainpage .column_2{
+.lowerDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.getPrice{
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+/* .mainpage .column_2{
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -176,4 +193,4 @@ h3{
   margin-top: 10px;
   width: 200px;
   height: 200px;
-}
+} */
