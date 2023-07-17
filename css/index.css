@@ -65,7 +65,7 @@ section .upper input {
   background-color: rgb(224, 223, 223);
 }
 
-section button {
+section .upper button {
   border: none;
   cursor: pointer;
   appearance: none;
@@ -94,6 +94,7 @@ section .lower {
   justify-content: space-between;
   align-items: flex-start;
   padding: 30px;
+  margin-left: 10px;
 }
 .sidebar .color {
   width: 100%;
@@ -149,22 +150,29 @@ h3{
   height: 230px;
 }
 .add_to_cart{
-  margin-left: 125px;
+  /* margin-left: 125px; */
   background-color: rgb(93, 93, 252);
   padding: 5px;
   width: 100px;
   height: 30px;
   cursor: pointer;
   border-radius: 5px;
+  color: black;
+  outline: none;
 }
 .lowerDiv{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  margin-right: 30px;
 }
 .getPrice{
   color: black;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 /* .mainpage .column_2{
   width: 100%;

@@ -27,24 +27,20 @@ function createItem(itemDetail) {
 
 	let getPrice = document.createElement("div");
 	getPrice.setAttribute("class", "getPrice");
-	getPrice.innerText = itemDetail.price;
+	getPrice.innerText = "₹"+itemDetail.price;
 
-	let submitButton = document.createElement("div");
-	submitButton.setAttribute("type", "submit");
+	let submitDiv = document.createElement("div")
+	let submitButton = document.createElement("button");
+	submitButton.type = "submit";
 	submitButton.setAttribute("class", "add_to_cart");
-	submitButton.innerText = "Add to Cart";
+	submitButton.textContent = "Add to Cart";
 
-	// addToCartDiv.innerText = "Rs 300";
-
-	getPrice.appendChild(submitButton);
-
+	//lowerDiv.appendChild(submitButton);
 	lowerDiv.appendChild(getPrice);
-	lowerDiv.appendChild(submitButton);
-	// lowerDiv.appendChild(submitButton);
+	lowerDiv.appendChild(submitDiv);
+	submitDiv.appendChild(submitButton);
 	
 	divEle.appendChild(imgEle);
-	divEle.appendChild(submitButton);
-	divEle.appendChild(getPrice);
 	divEle.appendChild(lowerDiv);
 
 	return divEle;
@@ -61,6 +57,12 @@ function createProductGrid() {
 		rowDiv.style.display = "flex";
 		rowDiv.style.flexDirection = "row";
 		rowDiv.style.justifyContent = "space-evenly";
+		rowDiv.style.width = "100%";
+		rowDiv.style.rowGap = "10px";
+		rowDiv.style.columnGapGap = "10px";
+		rowDiv.style.flexWrap = "wrap";
+		rowDiv.style.marginLeft = "10px";
+
 		
 		// arr = [0,1,2 : 3,4,5 : 6,7,8 : 9,10,11 : 12,13,14 : 15,16,17]
 		for (let col = 0; col < 3; col++) {
@@ -80,15 +82,6 @@ function createProductGrid() {
 	// docBody.appendChild(containeEle);
 }
 
-// function get_imgage (data){
-// 	for (i = 0 ; i < data.length; i++){
-// 		// console.log(data);
-// 		let imageURL =[]
-// 		imageURL = data[i].imageURL;
-// 		// console.log(imageURL);
-// 		return imageURL;
-// 	}
-// }
 
 // actionCell.classList.add("tableRowCells");
 // divEle.style.background = "red";
