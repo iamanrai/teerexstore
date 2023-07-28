@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeeRex Store Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
-    <h1>This is a cart</h1>
+    <header>
+        <nav>
+          <div class="left">TeeRex Store</div>
+          <div class="right">
+            <div class="product">Product</div>
+            <div class="cart">
+              <img src="../image/cart.png" alt="cart_logo" width="60px" height="60px" /><p id = "cartCounter">0</p>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div class="upper">
+            Shopping Cart
+        </div>
+        <div class="mainpage" id = "cartContainer">
+
+        </div>
+      </section>
+      <script src="/js/global.js"></script>
 </body>
 </html>
