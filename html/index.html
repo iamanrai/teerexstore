@@ -18,42 +18,42 @@
       <div class="right">
         <div class="product">Product</div>
         <div class="cart">
-          <a href="../html/cart.html"><img src="../image/cart.png" alt="cart_logo" width="60px" height="60px" /></a>
+          <a href="../html/cart.html"><img src="../image/cart.png" alt="cart_logo" width="60px" height="60px" /><p id = "counter">0</p></a>
         </div>
       </div>
     </nav>
   </header>
   <section>
     <div class="upper">
-      <input type="text" placeholder="Search for products..." />
-      <button type="submit">
+      <input type="text" placeholder="Search for products..." id = "searchInput"/>
+      <!-- <button type="submit" id = "searchButton">
         <img src="../image/search.png" width="40px" height="40px" />
-      </button>
+      </button> -->
     </div>
     <div class="lower">
       <div class="sidebar">
         <div class="color">
           <h3>Color</h3>
-          <input type="checkbox" id="red" value="red" /><label for="red">Red</label><br />
-          <input type="checkbox" id="blue" value="blue" /><label for="blue">Blue</label><br />
-          <input type="checkbox" id="green" value="green" /><label for="green">Green</label>
+          <input type="checkbox" id="redCheckBox" value="red" onclick="applyFilter('redCheckBox','Red')" /><label for="red">Red</label><br />
+          <input type="checkbox" id="blueCheckBox" value="blue" onclick="applyFilter('blueCheckBox','Blue')"/><label for="blue">Blue</label><br />
+          <input type="checkbox" id="greenCheckBox" value="green" onclick="applyFilter('greenCheckBox','Green')"/><label for="green">Green</label>
         </div>
         <div class="gender">
           <h3>Gender</h3>
-          <input type="checkbox" id="male" value="male" /><label for="male">Male</label><br />
-          <input type="checkbox" id="female" value="female" /><label for="female">Female</label>
+          <input type="checkbox" id="maleCheckBox" value="male" onclick="applyFilter('maleCheckBox','Men')"/><label for="male">Male</label><br />
+          <input type="checkbox" id="femaleCheckBox" value="female" onclick="applyFilter('femaleCheckBox','Women')"/><label for="female">Female</label>
         </div>
         <div class="price">
           <h3>Price</h3>
-          <input type="checkbox" id="price_1" value="price_1" /><label for="price_1">0-Rs250</label><br />
-          <input type="checkbox" id="price_2" value="price_2" /><label for="price_2">Rs251-450</label><br />
-          <input type="checkbox" id="price_3" value="price_3" /><label for="price_3">Rs 450</label>
+          <input type="checkbox" id="price1CheckBox" value="price_1" onclick="applyFilter('price1CheckBox', '250')"/><label for="price_1">0-₹250</label><br />
+          <input type="checkbox" id="price2CheckBox" value="price_2" onclick="applyFilter('price2CheckBox','251-450')"/><label for="price_2">₹251-450</label><br />
+          <input type="checkbox" id="price3CheckBox" value="price_3" onclick="applyFilter('price3CheckBox','Above 450')"/><label for="price_3">₹450</label>
         </div>
         <div id="type">
           <h3>Type</h3>
-          <input type="checkbox" id="polo" value="polo" /><label for="polo">Polo</label><br />
-          <input type="checkbox" id="hoodie" value="hoodie" /><label for="hoodie">Hoodie</label><br />
-          <input type="checkbox" id="basic" value="basic" /><label for="basic">Basic</label>
+          <input type="checkbox" id="poloCheckBox" value="polo" onclick="applyFilter('poloCheckBox','Polo')"/><label for="polo">Polo</label><br />
+          <input type="checkbox" id="hoodieCheckBox" value="hoodie" onclick="applyFilter('hoodieCheckBox','Hoodie')"/><label for="hoodie">Hoodie</label><br />
+          <input type="checkbox" id="basicCheckBox" value="basic" onclick="applyFilter('basicCheckBox','Basic')"/><label for="basic">Basic</label>
         </div>
       </div>
       <div class="mainpage" id = "container">
@@ -62,6 +62,7 @@
     </div>
   </section>
   <script src="/js/index.js"></script>
+  <script src="/js/global.js"></script>
 </body>
 
 </html>
