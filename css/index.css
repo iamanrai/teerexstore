@@ -19,7 +19,7 @@ header{
   top: 0px;
   z-index: 1;
 }
-.cart a{
+.cart {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,7 +27,7 @@ header{
 
 }
 
-.cart a p {
+.cart p {
   height: 22px;
   width: 22px;
   position: absolute;
