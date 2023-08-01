@@ -59,17 +59,82 @@ nav .right div {
   margin: 0 23px;
 }
 
-section{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
+section {
+  width: 95%;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  position: absolute;
 }
 
 section .upper {
-    width: 100%;
-    position: relative;
-    font-size: 1.4em;
-    top: 50px;
-    left: 90px;
+  width: 100%;
+  position: relative;
+  font-size: 1.4em;
+  top: 50px;
+  left: 90px;
+}
+.mainpage {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+  column-gap: 10px;
+  background-color: rgb(224, 223, 223);
+  position: absolute;
+  top: 65px;
+  left: 90px;
+}
+
+.mainpage_2{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  top: 50px;
+  flex-direction: column;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.mainDiv img {
+  width: 100px;
+  height: 100px;
+}
+
+.deleteButton {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  border: 0px;
+  box-shadow: 3px 3px 6px grey;
+  font-size: 18px;
+  font-weight: 600;
+}
+.totalPrice {
+  position: absolute;
+  top: 350px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+hr {
+  size: 2;
+  width: 100%;
 }
