@@ -185,3 +185,104 @@ h3{
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .filter-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .filter-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Adjust the layout for mobile devices */
+  .lower {
+    flex-direction: column;
+  }
+
+  .mainpage {
+    width: 100%;
+  }
+
+  .img_1 {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .upper {
+    margin: 10px;
+    justify-content: center;
+  }
+
+  section .upper input {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  /* New CSS for sidebar landscape mode */
+  .sidebar-landscape {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(224, 223, 223);
+    width: 200px;
+    height: 100vh;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* New CSS for mobile landscape mode */
+  .landscape-mode .sidebar-landscape {
+    display: flex;
+    transform: translateX(100%);
+  }
+  .landscape-mode .sidebar {
+    display: none;
+  }
+}
+
+/* CSS for larger screens (laptop) */
+@media screen and (min-width: 768px) {
+  .filter-icon {
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    position: sticky;
+    top: 180px;
+    height: 500px;
+    width: 200px;
+    flex-direction: column;
+    background-color: rgb(224, 223, 223);
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    margin-left: 10px;
+  }
+
+  .mainpage {
+    width: 80%;
+  }
+
+  .img_1 {
+    width: 270px;
+    height: 300px;
+    background-color: rgb(224, 223, 223);
+    margin-bottom: 15px;
+  }
+}
+
