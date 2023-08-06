@@ -43,9 +43,6 @@ function createItem(itemDetail) {
   if (itemDetail) {
     let divEle = document.createElement("div"); //create a new div
     divEle.setAttribute("class", "img_1"); // assigning class to the newly created div
-    // divEle.style.flexGrow = "2";
-    // divEle.style.flexBasis = "300px";
-
     let imgEle = document.createElement("img");
     imgEle.setAttribute(
       "src",
@@ -114,8 +111,6 @@ function createProductGrid(filteredData, isFilter) {
   let containeEle = document.getElementById("container");
   containeEle.appendChild(productGrid);
 }
-// actionCell.classList.add("tableRowCells");
-// divEle.style.background = "red";
 function applyFilter(id, filterValue) {
   let arr = [];
   filter[filterValue] = !filter[filterValue]; // invert the value of the key.
@@ -213,3 +208,20 @@ function performSearch() {
 }
 // Add event listener to the search input
 searchInput.addEventListener("input", performSearch);
+
+// JavaScript code
+
+let sidebarVisible = true;
+
+function toggleSidebar() {
+  let sidebar = document.querySelector('.sidebar');
+  let sidebarLandscape = document.querySelector('.sidebar-landscape');
+  sidebarVisible = !sidebarVisible;
+  if (sidebarVisible) {
+    sidebar.style.display = 'block';
+    sidebarLandscape.style.display = 'none';
+  } else {
+    sidebar.style.display = 'none';
+    sidebarLandscape.style.display = 'flex';
+  }
+}
