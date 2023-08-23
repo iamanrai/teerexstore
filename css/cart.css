@@ -76,26 +76,23 @@ section .upper {
   left: 90px;
 }
 .mainpage {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-around; */
   column-gap: 10px;
   background-color: rgb(224, 223, 223);
-  position: absolute;
-  top: 65px;
-  left: 90px;
+  /* position: absolute; */
+  /* left: 90px; */
 }
 
-.mainpage_2{
+.mainpage_2 {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   position: absolute;
-  top: 50px;
+  top: 120px;
   flex-direction: column;
+  left: 90px;
 }
 
 .mainDiv {
@@ -126,13 +123,13 @@ section .upper {
   font-weight: 600;
 }
 .totalPrice {
-  position: absolute;
-  top: 350px;
-  left: 10px;
   display: flex;
+  /* justify-content: center; */
+  margin-top: 10px;
+  font-weight: 900;
+  width: 60%;
   flex-direction: column;
   align-items: center;
-  width: 80%;
 }
 hr {
   size: 2;

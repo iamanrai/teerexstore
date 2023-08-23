@@ -175,7 +175,7 @@ function createCartGrid(item) {
     productCartGrid.appendChild(rowDiv);
   }
 
-  let containeCartEle = document.getElementById("cartContainer");
+  let containeCartEle = document.getElementById("mainCartContainer");
   containeCartEle.appendChild(productCartGrid);
 
   // Create and display the total price div
